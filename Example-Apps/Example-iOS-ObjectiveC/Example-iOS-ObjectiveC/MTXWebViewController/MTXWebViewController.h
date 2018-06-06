@@ -21,15 +21,18 @@
 
 @interface MTXWebViewController : UIViewController
 
-/**
- Time out internal.
- */
+/// Time out internal.
 @property(assign, nonatomic) NSTimeInterval timeoutInternal;
-
-/**
- Cache policy.
- */
+/// Cache policy.
 @property(assign, nonatomic) NSURLRequestCachePolicy cachePolicy;
+/// Shows navigation close bar button item. Default is YES.
+@property(assign, nonatomic) BOOL showsNavigationCloseBarButtonItem;
+/// Shows the title of navigation back bar button item. Default is YES.
+@property(assign, nonatomic) BOOL showsNavigationBackBarButtonItemTitle;
+/// Navigation back bar button item.
+@property(strong, nonatomic) UIBarButtonItem *navigationBackBarButtonItem;
+/// Navigation close bar button item.
+@property(strong, nonatomic) UIBarButtonItem *navigationCloseBarButtonItem;
 
 /**
  Get a instance of 'MTXWebViewController' by a url.
@@ -38,5 +41,14 @@
  @return a instance of 'MTXWebViewController'.
  */
 - (instancetype)initWithURL:(NSURL *)url;
+
+/**
+ Get a instance of `MTXWebViewController` by a HTML string and a base URL.
+
+ @param HTMLString a HTML string object.
+ @param baseURL a baseURL to be loaded.
+ @return a instance of `MTXWebViewController`.
+ */
+- (instancetype)initWithHTMLString:(NSString *)HTMLString baseURL:(NSURL *)baseURL;
 
 @end

@@ -17,6 +17,8 @@
 		AAF7905420C78C2000122E9E /* MTXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7905320C78C2000122E9E /* MTXWebViewController.m */; };
 		AAF7905C20C7B63A00122E9E /* MTXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7905B20C7B63A00122E9E /* MTXTableViewController.m */; };
 		AAF7905E20C7DA5900122E9E /* Swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AAF7905D20C7DA5900122E9E /* Swift.pdf */; };
+		AAF7906720C7FC7100122E9E /* MTXWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAF7906620C7FC7100122E9E /* MTXWebViewController.bundle */; };
+		AAF7906920C80DB200122E9E /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = AAF7906820C80DB200122E9E /* ExampleApp.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		AAF7905A20C7B63A00122E9E /* MTXTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTXTableViewController.h; sourceTree = "<group>"; };
 		AAF7905B20C7B63A00122E9E /* MTXTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXTableViewController.m; sourceTree = "<group>"; };
 		AAF7905D20C7DA5900122E9E /* Swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Swift.pdf; sourceTree = "<group>"; };
+		AAF7906620C7FC7100122E9E /* MTXWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MTXWebViewController.bundle; sourceTree = "<group>"; };
+		AAF7906820C80DB200122E9E /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 		D849F5313767D16AF2551AE5 /* Pods-Example-iOS-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS-ObjectiveC/Pods-Example-iOS-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,7 @@
 		AAF78FE020C77E6200122E9E /* Example-iOS-ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				AAF7906820C80DB200122E9E /* ExampleApp.html */,
 				AAF7905D20C7DA5900122E9E /* Swift.pdf */,
 				AAF7905620C7ACDF00122E9E /* Samples */,
 				AAF7905120C78BE400122E9E /* MTXWebViewController */,
@@ -103,6 +108,7 @@
 			children = (
 				AAF7905220C78C2000122E9E /* MTXWebViewController.h */,
 				AAF7905320C78C2000122E9E /* MTXWebViewController.m */,
+				AAF7906620C7FC7100122E9E /* MTXWebViewController.bundle */,
 			);
 			path = MTXWebViewController;
 			sourceTree = "<group>";
@@ -182,10 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF7906720C7FC7100122E9E /* MTXWebViewController.bundle in Resources */,
 				AAF78FEE20C77E6300122E9E /* LaunchScreen.storyboard in Resources */,
 				AAF78FEB20C77E6300122E9E /* Assets.xcassets in Resources */,
 				AAF7905E20C7DA5900122E9E /* Swift.pdf in Resources */,
 				AAF78FE920C77E6200122E9E /* Main.storyboard in Resources */,
+				AAF7906920C80DB200122E9E /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

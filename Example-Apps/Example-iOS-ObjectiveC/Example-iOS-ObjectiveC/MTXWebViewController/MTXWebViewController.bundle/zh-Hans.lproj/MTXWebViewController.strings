@@ -1,0 +1,24 @@
+/* 
+  MTXWebViewController.strings
+  Example-iOS-ObjectiveC
+
+  Created by MountainX on 2018/6/6.
+  Copyright © 2018年 MTX Software Technology Co.,Ltd. All rights reserved.
+*/
+"back" = "返回";
+"close" = "关闭";
+"loading" = "加载中...";
+"load failed" = "加载失败";
+"load failed:" = "网页加载失败：";
+"web page" = "网页由";
+"provided" = "提供";
+"browsing the web" = "内容浏览";
+
+"messages" = "来自网页的消息";
+"cancel" = "取消";
+"confirm" = "确定";
+"input" = "输入文字消息";
+"terminate" = "网页进程终止";
+
+"OpenInChrome" = "在Chrome中打开";
+"OpenInSafari" = "在Safari中打开";

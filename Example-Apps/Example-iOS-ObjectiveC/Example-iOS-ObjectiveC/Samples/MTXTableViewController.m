@@ -105,7 +105,11 @@
             break;
         case 2:
         {
-            MTXWebViewController *webVC = [[MTXWebViewController alloc] initWithURL:[NSURL URLWithString:@"http://www.youku.com"]];
+//            MTXWebViewController *webVC = [[MTXWebViewController alloc] initWithURL:[NSURL URLWithString:@"http://www.youku.com"]];
+            NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
+            NSString* appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
+            NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
+            MTXWebViewController *webVC = [[MTXWebViewController alloc] initWithHTMLString:appHtml baseURL:baseURL];
             [self.navigationController pushViewController:webVC animated:YES];
         }
             break;
