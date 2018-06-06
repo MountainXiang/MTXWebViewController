@@ -14,6 +14,9 @@
 		AAF78FEB20C77E6300122E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF78FEA20C77E6300122E9E /* Assets.xcassets */; };
 		AAF78FEE20C77E6300122E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF78FEC20C77E6300122E9E /* LaunchScreen.storyboard */; };
 		AAF78FF120C77E6300122E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF78FF020C77E6300122E9E /* main.m */; };
+		AAF7905420C78C2000122E9E /* MTXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7905320C78C2000122E9E /* MTXWebViewController.m */; };
+		AAF7905C20C7B63A00122E9E /* MTXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7905B20C7B63A00122E9E /* MTXTableViewController.m */; };
+		AAF7905E20C7DA5900122E9E /* Swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AAF7905D20C7DA5900122E9E /* Swift.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		AAF78FED20C77E6300122E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAF78FEF20C77E6300122E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF78FF020C77E6300122E9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAF7905220C78C2000122E9E /* MTXWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTXWebViewController.h; sourceTree = "<group>"; };
+		AAF7905320C78C2000122E9E /* MTXWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXWebViewController.m; sourceTree = "<group>"; };
+		AAF7905A20C7B63A00122E9E /* MTXTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTXTableViewController.h; sourceTree = "<group>"; };
+		AAF7905B20C7B63A00122E9E /* MTXTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTXTableViewController.m; sourceTree = "<group>"; };
+		AAF7905D20C7DA5900122E9E /* Swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Swift.pdf; sourceTree = "<group>"; };
 		D849F5313767D16AF2551AE5 /* Pods-Example-iOS-ObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS-ObjectiveC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS-ObjectiveC/Pods-Example-iOS-ObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +82,9 @@
 		AAF78FE020C77E6200122E9E /* Example-iOS-ObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				AAF7905D20C7DA5900122E9E /* Swift.pdf */,
+				AAF7905620C7ACDF00122E9E /* Samples */,
+				AAF7905120C78BE400122E9E /* MTXWebViewController */,
 				AAF78FE120C77E6200122E9E /* AppDelegate.h */,
 				AAF78FE220C77E6200122E9E /* AppDelegate.m */,
 				AAF78FE420C77E6200122E9E /* ViewController.h */,
@@ -85,6 +96,24 @@
 				AAF78FF020C77E6300122E9E /* main.m */,
 			);
 			path = "Example-iOS-ObjectiveC";
+			sourceTree = "<group>";
+		};
+		AAF7905120C78BE400122E9E /* MTXWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7905220C78C2000122E9E /* MTXWebViewController.h */,
+				AAF7905320C78C2000122E9E /* MTXWebViewController.m */,
+			);
+			path = MTXWebViewController;
+			sourceTree = "<group>";
+		};
+		AAF7905620C7ACDF00122E9E /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7905A20C7B63A00122E9E /* MTXTableViewController.h */,
+				AAF7905B20C7B63A00122E9E /* MTXTableViewController.m */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 		B3C02F7B5D46388AAFAAF497 /* Frameworks */ = {
@@ -155,6 +184,7 @@
 			files = (
 				AAF78FEE20C77E6300122E9E /* LaunchScreen.storyboard in Resources */,
 				AAF78FEB20C77E6300122E9E /* Assets.xcassets in Resources */,
+				AAF7905E20C7DA5900122E9E /* Swift.pdf in Resources */,
 				AAF78FE920C77E6200122E9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +219,9 @@
 			files = (
 				AAF78FE620C77E6200122E9E /* ViewController.m in Sources */,
 				AAF78FF120C77E6300122E9E /* main.m in Sources */,
+				AAF7905C20C7B63A00122E9E /* MTXTableViewController.m in Sources */,
 				AAF78FE320C77E6200122E9E /* AppDelegate.m in Sources */,
+				AAF7905420C78C2000122E9E /* MTXWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +364,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Example-iOS-ObjectiveC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +384,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Example-iOS-ObjectiveC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
